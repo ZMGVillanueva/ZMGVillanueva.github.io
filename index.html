@@ -39,11 +39,70 @@
                     <img src="images/user-2.png">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="subtitle">About Me</h1>
+                    
+                    <p class="description">Hello, my name is Zhen Marie G. Villanueva. I am a second-year college student at Mapuá Malayan Colleges Laguna,
+                        where I am pursuing a degree in Computer Science. My specialty lies in the exciting realm of Game Developing 
+                        and Web Design. In my free time, I enjoy immersing myself in the virtual worlds of video games. Some of my favorites
+                        include Valorant, New World, Minecraft, League of Legends, and Destiny 2. When I'm not gaming, I find myself
+                        captivated by horror gameplays on YouTube. Additionally, I have a creative side that I express through
+                        crocheting. I hope you find my interests as fascinating as I do!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('languages')">LANGUAGES</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="languages"> <!--LANGUAGES-->
+                        <ul>
+                            <li>HTML</li>
+                            <li>C, C#, C++</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education"> <!--EDUCATION-->
+                        <ul>
+                            <li><span>2022-2026</span><br>Computer Science at Mapua Malayan Colleges Laguna</li>
+                            <li><span>2020-2022</span><br>Senior Highschool at Lyceum Of Alabang</li>
+                            <li><span>2016-2020</span><br>Junior Highschool at Lyceum Of Alabang</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills"> <!--SKILLS-->
+                        <ul>
+                            <li><span>UI/UX</span><br>Web/app interface designing</li>
+                            <li><span>Web Development</span><br>Creating Websites/Applications</li>
+                            <li><span>Game Development</span><br>Developing of a game</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
 
 
 
