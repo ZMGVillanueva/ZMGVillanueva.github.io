@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab494eb231.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -50,9 +51,17 @@
                     </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('languages')">LANGUAGES</p>
                         <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links active-link" onclick="opentab('languages')">LANGUAGES</p>
                         <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                    </div>
+
+                    <div class="tab-contents" id="education"> <!--EDUCATION-->
+                        <ul>
+                            <li><span>2022-2026</span><br>Computer Science at Mapua Malayan Colleges Laguna</li>
+                            <li><span>2020-2022</span><br>Senior Highschool at Lyceum Of Alabang</li>
+                            <li><span>2016-2020</span><br>Junior Highschool at Lyceum Of Alabang</li>
+                        </ul>
                     </div>
 
                     <div class="tab-contents active-tab" id="languages"> <!--LANGUAGES-->
@@ -62,14 +71,6 @@
                             <li>CSS</li>
                             <li>Python</li>
                             <li>Javascript</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education"> <!--EDUCATION-->
-                        <ul>
-                            <li><span>2022-2026</span><br>Computer Science at Mapua Malayan Colleges Laguna</li>
-                            <li><span>2020-2022</span><br>Senior Highschool at Lyceum Of Alabang</li>
-                            <li><span>2016-2020</span><br>Junior Highschool at Lyceum Of Alabang</li>
                         </ul>
                     </div>
 
@@ -84,6 +85,56 @@
             </div>
         </div>
     </div>
+
+<!--------------------------------------------------------------SERVICES----------------------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <center><span><i class="fa-solid fa-laptop-code"></i></span></center>
+                    <h2>UI/UX Design</h2>
+                    <p>Transforming visions into intuitive, visually captivating digital experiences, My UI/UX
+                        design service crafts seamless interfaces that delight users and elevate brands to new
+                        heights.With a meticulous attention to detail and a deep understanding of user behavior,
+                        I strive to create designs that not only look aesthetically pleasing but also enhance
+                        usability and drive user engagement.</p>
+                </div>
+
+                <div>
+                    <center><span><i class="fa-regular fa-window-restore"></i></span></center>
+                    <h2>Web Development</h2>
+                    <p>I specialize in web development, crafting responsive and dynamic websites that are
+                        tailored to meet your specific needs. From front-end design to back-end functionality,
+                        I am dedicated to delivering high-quality code and seamless user experiences that bring
+                        your ideas to life.</p>
+                </div>
+
+                <div>
+                    <center><span><i class="fa-solid fa-headset"></i></span></center>
+                    <h2>Game Development</h2>
+                    <p>From conceptualization to implementation, I weave together captivating narratives,
+                        stunning visuals, and interactive gameplay mechanics to create unforgettable gaming
+                        experiences that transport players to extraordinary worlds. With a passion for pushing
+                        boundaries and a commitment to excellence, I am dedicated to crafting games that captivate
+                        and inspire players worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------------------------------------------PORTFOLIO----------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Works</h1>
+        </div>
+    </div>
+
+
+
+
+
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -103,10 +154,5 @@
         }
 
     </script>
-
-
-
-
-
 </body>
 </html> 
