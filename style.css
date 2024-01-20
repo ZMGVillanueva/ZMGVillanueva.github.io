@@ -128,6 +128,7 @@ nav ul li a:hover::after {
     font-size: 60px;
     font-weight: 600;
     padding-bottom: 5px;
+    color: #b39871;
 }
 
 .description {
@@ -240,4 +241,61 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
+}
+
+.work-list {
+    padding-left: 150px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+    color: #5a5a5a;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #b39871);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer h3 {
+    font-size: 24px;
+    color: #EDEAE0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    opacity: 1;
 }
