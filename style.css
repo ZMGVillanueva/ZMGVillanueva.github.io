@@ -414,6 +414,13 @@ form .btn {
     
 }
 
+#contact-msg {
+    font-weight: bold;
+    color: rgb(61, 153, 61);
+    margin-top: -30px;
+    display: block;
+}
+
 /*--------------------------------------------------------CSS FOR SMALL SCREEN-----------------------------------------------------------*/
 
 /*nav .fa-regular, nav .fa-solid {
